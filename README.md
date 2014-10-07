@@ -1,6 +1,13 @@
 # Binary Fluency: Creative Use of the CMOS Logic Family #
 ![](http://i.imgur.com/d3jwguv.jpg)
 
+*This workshop was conducted on 10/14/2014 at Parsons MFA Design and Technology. Video documentation can be found at the following link http://youtu.be/oh347Hx6CPw.
+
+**Description**
+
+The complimentary metal-oxide-semiconductor (CMOS) logic family contains an array of integrated circuits that perform all the tasks necessary for rudimentary computation. Designed for applications that require raw electronic processing power, the speed at which these chips operate can be slowed and their binary processes repurposed for creative applications.
+
+In this workshop, participants will learn how to utilize the functions of several chips from the CMOS family including the basic Boolean gates (AND, NOR, XOR, etc.), Schmitt trigger oscillators, frequency dividers, shift registers, and multiplexers. We will cover techniques for connecting the inputs and outputs of these chips to generate patterns for controlling software. Protocols for communication covered will include UART (Arduino serial), MIDI, and OSC. Finally, we will connect all projects together to form a giant modular controller. 
 
 **Required Software**
 
@@ -13,9 +20,6 @@
 	
 **CMOS ICs Demonstrated:** 4015, 40106, 4089, 4017, 4066, 4051, 4040, 4011, 4069, 4070, and 4077
 
-**Nifty Keyboard Sites**
-
-
 
 **YouTube Videos**
 
@@ -26,27 +30,27 @@
 
 **REFERENCES**
 
-- ARDUINO/CMOS APPLICATIONS
-	- http://arduino.cc/en/tutorial/ShiftOut
-	- https://www.inkling.com/read/arduino-cookbook-michael-margolis-2nd/chapter-5/recipe-5-8
-- CMOS AUDIO OUTPUT
+- Arduino / CMOS Applications
+	- 595 Shift Register - http://arduino.cc/en/tutorial/ShiftOut
+	- Multiplexing w/ CD4051 - http://tiny.cc/e96bnx
+- CMOS Audio Output / Lunetta Synthesizers
 	- http://milkcrate.com.au/_other/sea-moss/
 	- http://tiny.cc/hmb6mx
 	- http://www.beavisaudio.com/Projects/CMOS_Synthesizers/
-- KEYBOARD FRIENDLY SITES
-	- [http://www.ronwinter.tv/drums.html](http://www.ronwinter.tv/drums.html)
-	- [http://www.patatap.com/](http://www.patatap.com/)
 - MIDI
 	- http://www.midi.org/techspecs/midimessages.php
-- MUSICAL SCALES FOR MIDI
+- Musical Scales for MIDI
 	- http://www.grantmuller.com/MidiReference/doc/midiReference/ScaleReference.html
-- PURCHASE CMOS CHIPS
+- Purchase CMOS Chips
 	- http://stores.ebay.com/Thai-Shine
-- TIDAL
+- Tidal: Live Coding Pattern
 	- http://yaxu.org/tidal/
-- TEENSY
+- Teensy
 	- https://www.pjrc.com/teensy/
 	- https://github.com/fricklr/TeeOnArdu
+- USB Keyboard Audio/Visual Websites
+	- [http://www.ronwinter.tv/drums.html](http://www.ronwinter.tv/drums.html)
+	- [http://www.patatap.com/](http://www.patatap.com/)
 
 
 
