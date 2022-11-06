@@ -29,6 +29,8 @@ In this workshop, participants will learn how to utilize the functions of severa
 - Tidal - http://youtu.be/2UNhMPINedk
 
 **REFERENCES**
+- Teensy LC Pinout
+![](https://www.pjrc.com/teensy/teensylc_front_pinout.png)
 
 - Arduino / CMOS Applications
 	- 595 Shift Register - http://arduino.cc/en/tutorial/ShiftOut
