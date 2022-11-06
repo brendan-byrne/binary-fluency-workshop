@@ -1,4 +1,4 @@
-# Binary Fluency: Creative Use of the CMOS Logic Family #
+# 1-Bit Modular Music Systems: Creative Use of the CMOS Logic Family #
 ![](http://i.imgur.com/d3jwguv.jpg)
 
 *This workshop was conducted on 10/4/2014 at Parsons MFA Design and Technology. Video documentation can be found at the following link http://youtu.be/oh347Hx6CPw.
