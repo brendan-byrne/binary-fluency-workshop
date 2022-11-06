@@ -11,7 +11,7 @@ In this workshop, participants will learn how to utilize the functions of severa
 
 **Required Software**
 
-- Arduino 1.0.5 [http://arduino.cc/en/Main/OldSoftwareReleases](http://arduino.cc/en/Main/OldSoftwareReleases)
+- Arduino 1.8.19 [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
 - Teensyduino [https://www.pjrc.com/teensy/td_download.html](https://www.pjrc.com/teensy/td_download.html)
 - MIDI Monitor 
 	- Windows - [http://www.midiox.com/](http://www.midiox.com/)
