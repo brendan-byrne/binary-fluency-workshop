@@ -6,23 +6,17 @@ https://github.com/brendan-byrne/binary-fluency-workshop
 // VARIABLES -----------------------------------------------------------------------------
 
 // Clock Outputs
-int potRed = A9;
-int intervalRed;
-unsigned long lastMillisRed;
-int ledRed = 16;
-bool ledRedState = 0;
-
-int potGreen = A8;
-int intervalGreen;
-unsigned long lastMillisGreen;
-int ledGreen = 15;
-bool ledGreenState = 0;
+int potLeft = A9;
+int intervalLeft;
+unsigned long lastMillisLeft;
+int ledLeft = 15;
+bool ledLeftState = 0;
 
 // Random Output
-int potBlue = A7;
-int chanceBlue;
-int ledBlue = 14;
-bool ledBlueState = 0;
+int potRight = A8;
+int chanceRight;
+int ledRight = 14;
+bool ledRightState = 0;
 
 // Pushbutton
 int button = 18;
@@ -36,7 +30,7 @@ const int scaleMod[4][9] = {
   {0, 2, 4, 5, 7, 9, 11, 12, 14},  // major
   {0, 2, 3, 5, 7, 8, 10, 12, 14},  // minor
   {0, 1, 3, 5, 7, 8, 10, 12, 13},  // phrygian
-  {0, 1, 3, 5, 6, 8, 10, 12, 13}  // locrian
+  {0, 1, 2, 3, 4, 5,  6,  7,  8}   // chromatic
 };
 
 // MIDI Information
@@ -47,9 +41,8 @@ int lastNotes[numInputs];
 
 // MAIN -----------------------------------------------------------------------------
 void setup() {
-  pinMode(ledRed, OUTPUT);
-  pinMode(ledGreen, OUTPUT);
-  pinMode(ledBlue, OUTPUT); 
+  pinMode(ledLeft, OUTPUT);
+  pinMode(ledRight, OUTPUT); 
   pinMode(button, INPUT_PULLUP);
   pinMode(11, INPUT);
   pinMode(12, INPUT);
@@ -60,30 +53,21 @@ void setup() {
 }
 
 void loop() {
-  // Blue Chance
-  chanceBlue = analogRead(potBlue);
-  chanceBlue = map(chanceBlue, 0, 1023, 1, 100);
+  // Right Chance
+  chanceRight = analogRead(potRight);
+  chanceRight = map(chanceRight, 0, 1023, 1, 100);
 
-  // Red Clock
-  intervalRed = analogRead(potRed);
-  intervalRed = fscale(intervalRed, 0, 1023, 15, 800, -7);
-  if (millis() - lastMillisRed > intervalRed) {
-    ledRedState = !ledRedState;
-    digitalWrite(ledRed, ledRedState);
-    lastMillisRed = millis();
-  }
+  // Left Clock
+  intervalLeft = analogRead(potLeft);
+  intervalLeft = fscale(intervalLeft, 0, 1023, 15, 800, -7);
+  if (millis() - lastMillisLeft > intervalLeft) {
+    ledLeftState = !ledLeftState;
+    digitalWrite(ledLeft, ledLeftState);
+    lastMillisLeft = millis();
 
-  // Green Clock
-  intervalGreen = analogRead(potGreen);
-  intervalGreen = fscale(intervalGreen, 0, 1023, 15, 800, -7);
-  if (millis() - lastMillisGreen > intervalGreen) {
-    ledGreenState = !ledGreenState;
-    digitalWrite(ledGreen, ledGreenState);
-    lastMillisGreen = millis();
-
-    if (chanceBlue > random(1, 100)) {
-      ledBlueState = !ledBlueState;
-      digitalWrite(ledBlue, ledBlueState); 
+    if (chanceRight > random(1, 100)) {
+      ledRightState = !ledRightState;
+      digitalWrite(ledRight, ledRightState); 
     }
   }
 
